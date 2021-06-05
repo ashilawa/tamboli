@@ -1,268 +1,303 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Sky World Tours And Travel-Pune</title>
+    <title>Sky World Tours And Travel-Pune</title>
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/responsee.css">
     <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
-    <link rel="stylesheet" href="owl-carousel/owl.theme.css">     
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
     <link rel="stylesheet" href="css/template-style.css">
     <link href='https://fonts.googleapis.com/css?family=Playfair+Display&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
-	 <style type="text/css">
-#mydiv {
-   background-image: url('/img/img1-01.jpg');
-   background-repeat:no-repeat;
-   background-size:contain;
-   height:100%;width:100%;
-}
-</style>
-<style>
-.bg-ne{
-    background-image: url("/images/ne.jp");
-}
-img {
-    max-width: 100%;
-    max-height: 100%;background-size:100%;
-}
+    <style type="text/css">
+        #mydiv {
+            background-image: url('/img/img1-01.jpg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+    <style>
+        .bg-ne {
+            background-image: url("/images/ne.jp");
+        }
+        
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            background-size: 100%;
+        }
+        
+        .portrait {
+            height: 80px;
+            width: 30px;
+        }
+        
+        .landscape {
+            height: 30px;
+            width: 80px;
+        }
+        
+        .square {
+            height: 75px;
+            width: 75px;
+            margin: 0 auto;
+        }
+    </style>
+    <script>
+        $(function() {
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <script>
+        $(function row1Clicked() {
+                    var container = $('div'),
+                        scrollTo = $('#row_2');
 
-.portrait {
-    height: 80px;
-    width: 30px;
-}
+                    container.animate({
+                        scrollTop: scrollTo.offset().top - container.offset().top + container.scrollTop()
+                    });
+                }
+                $("button").click(function() {
+                    $('html,body').animate({
+                            scrollTop: $(".second").offset().top
+                        },
+                        'slow');
+                });
+    </script>
+</head>
 
-.landscape {
-    height: 30px;
-    width: 80px;
-}
-
-.square {
-    height: 75px;
-    width: 75px; margin: 0 auto;
-}
-</style>
-<script> 
-$(function(){ 
-  $("#footer").load("footer.html"); 
-});
-</script>
-<script>
-$(function row1Clicked(){ 
-var container = $('div'),
-    scrollTo = $('#row_2');
-
-container.animate({
-    scrollTop: scrollTo.offset().top - container.offset().top + container.scrollTop()
-});
-} 
-$("button").click(function() {
-    $('html,body').animate({
-        scrollTop: $(".second").offset().top},
-        'slow');
-});
-</script>
-  </head>
-  
-  <body class="size-1140">
+<body class="size-1140">
     <!-- HEADER -->
-    <header role="banner" class="position-absolute">    
-      <!-- Top Navigation -->
-      <nav class="background-transparent background-transparent-hightlight full-width sticky">
-        <div class="s-12 l-2">
-          <a href="index.html" class="logo">
-            <!-- Logo White Version -->
-            <img class="logo-white" src="img/logo.png" alt="">
-            <!-- Logo Dark Version -->
-            <img class="logo-dark" src="img/logo-dark.png" alt="">
-          </a>
-        </div>
-        <div class="top-nav s-12 l-10">
-          <p class="nav-text"></p>
-          <ul class="right chevron">
-            <li><a href="index.html">Home</a></li>
-           <li><a href="services.html">Services</a></li>
-            <li><a>Packages</a>
-              <ul>
-                <li><a href="domestic_packages.html">Domestic Packages</a></li>
-                <li><a>International packages</a></li>
-              </ul>
-            </li>	 <li><a href="about.html">About</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
+    <header role="banner" class="position-absolute">
+        <!-- Top Navigation -->
+        <nav class="background-transparent background-transparent-hightlight full-width sticky">
+            <div class="s-12 l-2">
+                <a href="index.html" class="logo">
+                    <!-- Logo White Version -->
+                    <img class="logo-white" src="img/logo.png" alt="">
+                    <!-- Logo Dark Version -->
+                    <img class="logo-dark" src="img/logo-dark.png" alt="">
+                </a>
+            </div>
+            <div class="top-nav s-12 l-10">
+                <p class="nav-text"></p>
+                <ul class="right chevron">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a>Packages</a>
+                        <ul>
+                            <li><a href="domestic_packages.html">Domestic Packages</a></li>
+                            <li><a>International packages</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    
+
     <!-- MAIN -->
     <main role="main">
-      <!-- Content -->
-      <article>
-        <header class="section background-dark">
-		 <h3 class="text-size-40 margin-bottom-30">Kerala Tour</h3>
-        </header>
-        <section class="section background-white">
-    <div class="line">
-            <div class="margin">
-			
-		<div class="container">
-			<table border="1" cellpadding="10" cellspacing="0" align="middle"  height="300" width="600">
-			<tr bgcolor="#669999"><th style="text-align:center"><u>TOUR NAME</u></th><th style="text-align:center"><u>DURATION</u></th></tr>
-			<tr><td align="center"><a href="" id="button"  >Kerala Tour</a></td><td align="center">6 Nights/ 7 Days</td></tr>
-			<tr><td align="center"><a href=""  >Kerala Tour</a></td><td align="center">7 Nights/ 8 Days</td></tr>
-			
-		</table>
-		</div>
-		
-	
-       	</div> 
-  <div class="margin">
-	<div>
-    <table id="my_table">
-        <tr id='row_1'><td>	<div class="container">
-			
-				<p style="color: green; font-size: 30px; text-decoration:underline" align="center">-- KERALA -- </p><br><br>
+        <!-- Content -->
+        <article>
+            <header class="section background-dark">
+                <h3 class="text-size-40 margin-bottom-30">Kerala Tour</h3>
+            </header>
+            <section class="section background-white">
+                <div class="line">
+                    <div class="margin">
+
+                        <div class="container">
+                            <table border="1" cellpadding="10" cellspacing="0" align="middle" height="300" width="600">
+                                <tr bgcolor="#669999">
+                                    <th style="text-align:center"><u>TOUR NAME</u></th>
+                                    <th style="text-align:center"><u>DURATION</u></th>
+                                </tr>
+                                <tr>
+                                    <td align="center"><a href="" id="button">Kerala Tour</a></td>
+                                    <td align="center">6 Nights/ 7 Days</td>
+                                </tr>
+                                <tr>
+                                    <td align="center"><a href="">Kerala Tour</a></td>
+                                    <td align="center">7 Nights/ 8 Days</td>
+                                </tr>
+
+                            </table>
+                        </div>
+
+
+                    </div>
+                    <div class="margin">
+                        <div>
+                            <table id="my_table">
+                                <tr id='row_1'>
+                                    <td>
+                                        <div class="container">
+
+                                            <p style="color: green; font-size: 30px; text-decoration:underline" align="center">-- KERALA -- </p><br><br>
 
 
 
 
 
-<p style="color: brown; font-size: 20px; text-decoration:underline">Day 01: Arrive Cochin Drive to Munnar</p> 
-You are greeted on arrival at Cochin International Airport /Railway station by Munnar Holidays representative and thereafter depart for Munnar (130 kms / 04 hrs) enjoying the scenic beauty & the marvelous waterfalls, high mountains with the low flying clouds passing by. Arrive Munnar and check in at hotel. Evening at Leisure. Overnight at Munnar.  <br><br>
+                                            <p style="color: brown; font-size: 20px; text-decoration:underline">Day 01: Arrive Cochin Drive to Munnar</p>
+                                            You are greeted on arrival at Cochin International Airport /Railway station by Munnar Holidays representative and thereafter depart for Munnar (130 kms / 04 hrs) enjoying the scenic beauty & the marvelous waterfalls, high mountains with the low flying
+                                            clouds passing by. Arrive Munnar and check in at hotel. Evening at Leisure. Overnight at Munnar. <br><br>
 
-<p style="color: brown; font-size: 20px; text-decoration:underline">Day 02: Munnar Day Tour</p> 
-Morning after breakfast proceed for sightseeing in Munnar which includes visit to the flower garden and for an elephant safari, before driving on to the scenic Mattupetty dam, Eco- point and Kundala dam areas. At Kundala dam there is an opportunity to enjoy boating on the lake. Finally we drive through a vegetable growing area to Top station which is situated high in the mountains on the border between Tamil Nadu and Kerala. Overnight stay at Munnar.<br><br>  
+                                            <p style="color: brown; font-size: 20px; text-decoration:underline">Day 02: Munnar Day Tour</p>
+                                            Morning after breakfast proceed for sightseeing in Munnar which includes visit to the flower garden and for an elephant safari, before driving on to the scenic Mattupetty dam, Eco- point and Kundala dam areas. At Kundala dam there is an opportunity to
+                                            enjoy boating on the lake. Finally we drive through a vegetable growing area to Top station which is situated high in the mountains on the border between Tamil Nadu and Kerala. Overnight stay at Munnar.<br><br>
 
-<p style="color: brown; font-size: 20px; text-decoration:underline">Day 03: Munnar to Thekkady</p> 
-Morning drive to Thekkady covering a distance of 110 kms / 4 hrs through cardamom hills. Check into the resort. After lunch take a boat ride on the lake and the Periyar dam. Boating will take approximate 2 hours and you can also get rare glimpses of wild animals. The forest department offers many programs including periyar tiger trail, nature walk, bamboo rafting, etc. Plantation tourism also is promoted by private agencies, so that the tourists can see and learn the cultivation of various spices of Kerala. Overnight stay at Thekkady. <br><br>
+                                            <p style="color: brown; font-size: 20px; text-decoration:underline">Day 03: Munnar to Thekkady</p>
+                                            Morning drive to Thekkady covering a distance of 110 kms / 4 hrs through cardamom hills. Check into the resort. After lunch take a boat ride on the lake and the Periyar dam. Boating will take approximate 2 hours and you can also get rare glimpses of wild
+                                            animals. The forest department offers many programs including periyar tiger trail, nature walk, bamboo rafting, etc. Plantation tourism also is promoted by private agencies, so that the tourists can see and
+                                            learn the cultivation of various spices of Kerala. Overnight stay at Thekkady. <br><br>
 
-<p style="color: brown; font-size: 20px; text-decoration:underline">Day 04: Thekkady to Kovalam </p>
-After breakfast drive to Kovalam. On arrival check in to the Resort. Evening free to relax at the Beach. Overnight stay at Kovalam. <br><br>
+                                            <p style="color: brown; font-size: 20px; text-decoration:underline">Day 04: Thekkady to Kovalam </p>
+                                            After breakfast drive to Kovalam. On arrival check in to the Resort. Evening free to relax at the Beach. Overnight stay at Kovalam. <br><br>
 
-<p style="color: brown; font-size: 20px; text-decoration:underline">Day 05: Kovalam – Kanyakumari Sightseeing </p>  
-After breakfast drive to Kanyakumari (100 km – 3 hours drive). Kanyakumari is located at the southern tip of the Indian subcontinent and represents the site where the spiritual leader Swami Vivekananda spent days in meditation upon a rock off of the coast. Padmanbhapuram Palace, Suchithram Temple, Devi Kanyakumari Temple, Vivekananda Memorial, Gandhidham and Trivenisagam are some of the sightseeing attractions in Kanyakumari. 
-Enjoy the sunset and back to Kovalam.  Overnight at Kovalam.<br><br>
+                                            <p style="color: brown; font-size: 20px; text-decoration:underline">Day 05: Kovalam – Kanyakumari Sightseeing </p>
+                                            After breakfast drive to Kanyakumari (100 km – 3 hours drive). Kanyakumari is located at the southern tip of the Indian subcontinent and represents the site where the spiritual leader Swami Vivekananda spent days in meditation upon a rock off of the coast.
+                                            Padmanbhapuram Palace, Suchithram Temple, Devi Kanyakumari Temple, Vivekananda Memorial, Gandhidham and Trivenisagam are some of the sightseeing attractions in Kanyakumari. Enjoy the sunset and back to Kovalam.
+                                            Overnight at Kovalam.<br><br>
 
-<p style="color: brown; font-size: 20px; text-decoration:underline"> Day 06:  Kovalam to Alleppey Houseboat</p>  
-After breakfast Check out your resort and drive to Alleppey; also known as Venice of the east by its special geographical features as the place is famous for its vast back water stretches and paddy fields. By 01 pm you can board your houseboat to explore the back waters and its serene beauty. Enjoy the ride; delicious cuisines. Overnight stay at House Boat. <br><br>
+                                            <p style="color: brown; font-size: 20px; text-decoration:underline"> Day 06: Kovalam to Alleppey Houseboat</p>
+                                            After breakfast Check out your resort and drive to Alleppey; also known as Venice of the east by its special geographical features as the place is famous for its vast back water stretches and paddy fields. By 01 pm you can board your houseboat to explore
+                                            the back waters and its serene beauty. Enjoy the ride; delicious cuisines. Overnight stay at House Boat. <br><br>
 
-<p style="color: brown; font-size: 20px; text-decoration:underline">Day 07:</p> 
- Departure After the breakfast pack your baggage’s with a promise to return once again to this Paradise... later Proceed to  Sightseeing evening depart on time to board your flight/train with sweet memories of your holiday. We await for your next visit ... Bon Voyage. Service ends. <br><br>
-
-
-
-		</div>
-	</td></tr>
-        <tr id='row_2'><td>	<div class="second">
-			
-				<p style="color: green; font-size: 30px; text-decoration:underline" align="center">-- KERALA -- </p><br><br>
-
+                                            <p style="color: brown; font-size: 20px; text-decoration:underline">Day 07:</p>
+                                            Departure After the breakfast pack your baggage’s with a promise to return once again to this Paradise... later Proceed to Sightseeing evening depart on time to board your flight/train with sweet memories of your holiday. We await for your next visit
+                                            ... Bon Voyage. Service ends. <br><br>
 
 
 
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr id='row_2'>
+                                    <td>
+                                        <div class="second">
+
+                                            <p style="color: green; font-size: 30px; text-decoration:underline" align="center">-- KERALA -- </p><br><br>
 
 
 
 
-	<p style="color: red; font-size: 20px">[ Cochin-Munnar-Thekkady-Alleppey-Kovalam-Kanyakumari-Trivandrum ]</p><br><br>
-
-<p style="color: brown; font-size: 20px; text-decoration:underline">Day 01: Arrive Cochin Drive to Munnar</p>
-You are greeted on arrival at Cochin International Airport /Railway station by Munnar Holidays representative and thereafter depart for Munnar (130 kms / 04 hrs) enjoying the scenic beauty & the marvelous waterfalls, high mountains with the low flying clouds passing by. Arrive Munnar and check in at hotel. Evening at Leisure.Overnight at Munnar.          <br><br>
-
-<p style="color: brown; font-size: 20px; text-decoration:underline">Day 02: Munnar Day Tour</p>
-Morning after breakfast proceed for sightseeing in Munnar which includes visit to the flower garden and for an elephant safari, before driving on to the scenic Mattupetty dam, Eco- point and Kundala dam areas. At Kundala dam there is an opportunity to enjoy boating on the lake. Finally we drive through a vegetable growing area to Top station which is situated high in the mountains on the border between Tamil Nadu and Kerala. Overnight stay at Munnar.<br><br>
-
-<p style="color: brown; font-size: 20px; text-decoration:underline">Day 03: Munnar to Thekkady</p>
-Morning drive to Thekkady covering a distance of 110 kms / 4 hrs through cardamom hills. Check into the resort. After lunch take a boat ride on the lake and the Periyar dam. Boating will take approximate 2 hours and you can also get rare glimpses of wild animals. The forest department offers many programs including periyar tiger trail, nature walk, bamboo rafting, etc. Plantation tourism also is promoted by private agencies, so that the tourists can see and learn the cultivation of various spices of Kerala. Overnight stay at Thekkady.
-To avoid last minute disappointments we recommend booking Thekkady boating advance via www.periyarfoundation.org<br><br>
-
-<p style="color: brown; font-size: 20px; text-decoration:underline"> Day 04: Thekkady to Alleppey Houseboat (160Kms 05Hrs Drive) Recommend to start by 08am</p>
-After breakfast Check out your resort and drive to Alleppey; also known as Venice of the east by its special geographical features as the place is famous for its vast back water stretches and paddy fields. By 01 pm you can board your houseboat to explore the back waters and its serene beauty. Enjoy the ride; delicious cuisines.Overnight stay at House Boat.<br><br>
-
-<p style="color: brown; font-size: 20px; text-decoration:underline">Day 05: Alleppey – Kovalam (190Kms 05Hrs Drive)</p>
-After breakfast drive to Kovalam.On arrival check in to the Resort. Evening free to relax at the Beach. Overnight stay at Kovalam.<br><br>
- 
-<p style="color: brown; font-size: 20px; text-decoration:underline">Day 06: Kovalam to Trivandrum Sightseeing</p>
-After breakfast proceed for sightseeing of Trivandrum [The Capital of Kerala]. Here you can see the 260 year old Sri Padmanabha Swami Temple, Puthan Maliga Palace Museum [200 year old Palace of the Travancore Maharaja's], Napier Museum and Sri Chitra Art Gallery. Evening free to relax at the Beach. Overnight stay at Kovalam.<br><br>
- 
-<p style="color: brown; font-size: 20px; text-decoration:underline">Day 07: Trivandrum – Kanyakumari</p>
-After early breakfast check out from the hotel and drive to Kanyakumari (100km–3hours) drive, Proceed for local sightseeing tour in the afternoon. Kanyakumari is located at the southern tip of the Indian subcontinent and represents the site where the spiritual leader Swami Vivekananda spent days in meditation upon a rock off of the coast. Padmanbhapuram Palace, Suchithram Temple, Vivekananda Memorial, Gandhidham and Trivenisagam are some of the sightseeing attractions in Kanyakumari. Overnight at Kanyakumari.<br><br>
- 
-<p style="color: brown; font-size: 20px; text-decoration:underline">Day 08: Departure from Trivandrum</p>
-Morning after breakfast transfer to Trivandrum Airport or Railway Station for the onward Journey.
 
 
 
-		</div>
-	</td></tr>
-    </table>
-</div>
-  
-  </div>
-		</div>  
-	   </section> 
-      </article>
+
+                                            <p style="color: red; font-size: 20px">[ Cochin-Munnar-Thekkady-Alleppey-Kovalam-Kanyakumari-Trivandrum ]</p><br><br>
+
+                                            <p style="color: brown; font-size: 20px; text-decoration:underline">Day 01: Arrive Cochin Drive to Munnar</p>
+                                            You are greeted on arrival at Cochin International Airport /Railway station by Munnar Holidays representative and thereafter depart for Munnar (130 kms / 04 hrs) enjoying the scenic beauty & the marvelous waterfalls, high mountains with the low flying
+                                            clouds passing by. Arrive Munnar and check in at hotel. Evening at Leisure.Overnight at Munnar. <br><br>
+
+                                            <p style="color: brown; font-size: 20px; text-decoration:underline">Day 02: Munnar Day Tour</p>
+                                            Morning after breakfast proceed for sightseeing in Munnar which includes visit to the flower garden and for an elephant safari, before driving on to the scenic Mattupetty dam, Eco- point and Kundala dam areas. At Kundala dam there is an opportunity to
+                                            enjoy boating on the lake. Finally we drive through a vegetable growing area to Top station which is situated high in the mountains on the border between Tamil Nadu and Kerala. Overnight stay at Munnar.<br><br>
+
+                                            <p style="color: brown; font-size: 20px; text-decoration:underline">Day 03: Munnar to Thekkady</p>
+                                            Morning drive to Thekkady covering a distance of 110 kms / 4 hrs through cardamom hills. Check into the resort. After lunch take a boat ride on the lake and the Periyar dam. Boating will take approximate 2 hours and you can also get rare glimpses of wild
+                                            animals. The forest department offers many programs including periyar tiger trail, nature walk, bamboo rafting, etc. Plantation tourism also is promoted by private agencies, so that the tourists can see and
+                                            learn the cultivation of various spices of Kerala. Overnight stay at Thekkady. To avoid last minute disappointments we recommend booking Thekkady boating advance via www.periyarfoundation.org<br><br>
+
+                                            <p style="color: brown; font-size: 20px; text-decoration:underline"> Day 04: Thekkady to Alleppey Houseboat (160Kms 05Hrs Drive) Recommend to start by 08am</p>
+                                            After breakfast Check out your resort and drive to Alleppey; also known as Venice of the east by its special geographical features as the place is famous for its vast back water stretches and paddy fields. By 01 pm you can board your houseboat to explore
+                                            the back waters and its serene beauty. Enjoy the ride; delicious cuisines.Overnight stay at House Boat.<br><br>
+
+                                            <p style="color: brown; font-size: 20px; text-decoration:underline">Day 05: Alleppey – Kovalam (190Kms 05Hrs Drive)</p>
+                                            After breakfast drive to Kovalam.On arrival check in to the Resort. Evening free to relax at the Beach. Overnight stay at Kovalam.<br><br>
+
+                                            <p style="color: brown; font-size: 20px; text-decoration:underline">Day 06: Kovalam to Trivandrum Sightseeing</p>
+                                            After breakfast proceed for sightseeing of Trivandrum [The Capital of Kerala]. Here you can see the 260 year old Sri Padmanabha Swami Temple, Puthan Maliga Palace Museum [200 year old Palace of the Travancore Maharaja's], Napier Museum and Sri Chitra
+                                            Art Gallery. Evening free to relax at the Beach. Overnight stay at Kovalam.<br><br>
+
+                                            <p style="color: brown; font-size: 20px; text-decoration:underline">Day 07: Trivandrum – Kanyakumari</p>
+                                            After early breakfast check out from the hotel and drive to Kanyakumari (100km–3hours) drive, Proceed for local sightseeing tour in the afternoon. Kanyakumari is located at the southern tip of the Indian subcontinent and represents the site where the
+                                            spiritual leader Swami Vivekananda spent days in meditation upon a rock off of the coast. Padmanbhapuram Palace, Suchithram Temple, Vivekananda Memorial, Gandhidham and Trivenisagam are some of the sightseeing
+                                            attractions in Kanyakumari. Overnight at Kanyakumari.<br><br>
+
+                                            <p style="color: brown; font-size: 20px; text-decoration:underline">Day 08: Departure from Trivandrum</p>
+                                            Morning after breakfast transfer to Trivandrum Airport or Railway Station for the onward Journey.
+
+
+
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </article>
     </main>
     <footer>
-      <!-- Contact Us -->
-      <div class="background-primary padding text-center">
-        <p class="h1">Contact Us: 0982 331 4663</p>                                                                        
-      </div>
-      
-      <!-- Main Footer -->
-      <section class="background-dark full-width">
-        <!-- Map -->
-        <div class="s-12 m-12 l-6 margin-m-bottom-2x">
-          <div class="s-12 grayscale center">  
- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15128.856834489945!2d73.7719952!3d18.564379!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x12716dffdb0c78c7!2sSky+World+Tours+%26+Travels!5e0!3m2!1sen!2sin!4v1494008304397" width="100%" height="450" frameborder="0" style="border:0"></iframe>
-          </div>
+        <!-- Contact Us -->
+        <div class="background-primary padding text-center">
+            <p class="h1">Contact Us: 0982 331 4663</p>
         </div>
-        
-        <!-- Collumn 2 -->
-        <div class="s-12 m-12 l-6 margin-m-bottom-2x">
-          <div class="padding-2x">
-            <div class="line">              
-              <div class="float-left">
-                  <i class="icon-sli-location-pin text-primary icon3x"></i>
-                </div>
-                <div class="margin-left-70 margin-bottom-30">
-                  <h3 class="margin-bottom-0">Company Address</h3>
-                  <p>Shop No 2, Building C<br>
-                    Chintamani Nagar Society<br> Anand Park, Aundh, <br>Pune, Maharashtra 411007
-                  </p>               
-                </div>
-                <div class="float-left">
-                  <i class="icon-sli-envelope text-primary icon3x"></i>
-                </div>
-                <div class="margin-left-70 margin-bottom-30">
-                  <h3 class="margin-bottom-0">E-mail</h3>
-                   <p>skyworldtravels@gmail.com<br>
-                  </p>              
-                </div>
-                <div class="float-left">
-                  <i class="icon-sli-phone text-primary icon3x"></i>
-                </div>
-                <div class="margin-left-70">
-                  <h3 class="margin-bottom-0">Phone Numbers</h3>
-                  <p>020 258 81 800<br>
-                     0 989 089 8187<br>
-                     0 982 331 4663
-                  </p>             
+
+        <!-- Main Footer -->
+        <section class="background-dark full-width">
+            <!-- Map -->
+            <div class="s-12 m-12 l-6 margin-m-bottom-2x">
+                <div class="s-12 grayscale center">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15128.856834489945!2d73.7719952!3d18.564379!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x12716dffdb0c78c7!2sSky+World+Tours+%26+Travels!5e0!3m2!1sen!2sin!4v1494008304397" width="100%" height="450"
+                        frameborder="0" style="border:0"></iframe>
                 </div>
             </div>
-          </div>
-        </div>  
-      </section>
-      <hr class="break margin-top-bottom-0" style="border-color: rgba(0, 38, 51, 0.80);">
-      
-      <!-- Bottom Footer -->
-      </section>
+
+            <!-- Collumn 2 -->
+            <div class="s-12 m-12 l-6 margin-m-bottom-2x">
+                <div class="padding-2x">
+                    <div class="line">
+                        <div class="float-left">
+                            <i class="icon-sli-location-pin text-primary icon3x"></i>
+                        </div>
+                        <div class="margin-left-70 margin-bottom-30">
+                            <h3 class="margin-bottom-0">Company Address</h3>
+                            <p>Shop No 2, Building C<br> Chintamani Nagar Society<br> Anand Park, Aundh, <br>Pune, Maharashtra 411007
+                            </p>
+                        </div>
+                        <div class="float-left">
+                            <i class="icon-sli-envelope text-primary icon3x"></i>
+                        </div>
+                        <div class="margin-left-70 margin-bottom-30">
+                            <h3 class="margin-bottom-0">E-mail</h3>
+                            <p>skyworldtours.satish@gmail.com<br>
+                            </p>
+                        </div>
+                        <div class="float-left">
+                            <i class="icon-sli-phone text-primary icon3x"></i>
+                        </div>
+                        <div class="margin-left-70">
+                            <h3 class="margin-bottom-0">Phone Numbers</h3>
+                            <p>020 258 81 800<br> 0 989 089 8187<br> 0 982 331 4663
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="break margin-top-bottom-0" style="border-color: rgba(0, 38, 51, 0.80);">
+
+        <!-- Bottom Footer -->
+        </section>
     </footer>
-  
-  </body>
+
+</body>
+
 </html>

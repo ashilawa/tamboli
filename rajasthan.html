@@ -1,271 +1,288 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Sky World Tours And Travel-Pune</title>
+    <title>Sky World Tours And Travel-Pune</title>
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/responsee.css">
     <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
-    <link rel="stylesheet" href="owl-carousel/owl.theme.css">     
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
     <link rel="stylesheet" href="css/template-style.css">
     <link href='https://fonts.googleapis.com/css?family=Playfair+Display&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
-	 <style type="text/css">
-#mydiv {
-   background-image: url('/img/img1-01.jpg');
-   background-repeat:no-repeat;
-   background-size:contain;
-   height:100%;width:100%;
-}
-</style>
-<style>
-.bg-ne{
-    background-image: url("/images/ne.jp");
-}
-img {
-    max-width: 100%;
-    max-height: 100%;background-size:100%;
-}
+    <style type="text/css">
+        #mydiv {
+            background-image: url('/img/img1-01.jpg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+    <style>
+        .bg-ne {
+            background-image: url("/images/ne.jp");
+        }
+        
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            background-size: 100%;
+        }
+        
+        .portrait {
+            height: 80px;
+            width: 30px;
+        }
+        
+        .landscape {
+            height: 30px;
+            width: 80px;
+        }
+        
+        .square {
+            height: 75px;
+            width: 75px;
+            margin: 0 auto;
+        }
+    </style>
+    <script>
+        $(function() {
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <script>
+        $(function row1Clicked() {
+                    var container = $('div'),
+                        scrollTo = $('#row_2');
 
-.portrait {
-    height: 80px;
-    width: 30px;
-}
+                    container.animate({
+                        scrollTop: scrollTo.offset().top - container.offset().top + container.scrollTop()
+                    });
+                }
+                $("button").click(function() {
+                    $('html,body').animate({
+                            scrollTop: $(".second").offset().top
+                        },
+                        'slow');
+                });
+    </script>
+</head>
 
-.landscape {
-    height: 30px;
-    width: 80px;
-}
-
-.square {
-    height: 75px;
-    width: 75px; margin: 0 auto;
-}
-</style>
-<script> 
-$(function(){ 
-  $("#footer").load("footer.html"); 
-});
-</script>
-<script>
-$(function row1Clicked(){ 
-var container = $('div'),
-    scrollTo = $('#row_2');
-
-container.animate({
-    scrollTop: scrollTo.offset().top - container.offset().top + container.scrollTop()
-});
-} 
-$("button").click(function() {
-    $('html,body').animate({
-        scrollTop: $(".second").offset().top},
-        'slow');
-});
-</script>
-  </head>
-  
-  <body class="size-1140">
+<body class="size-1140">
     <!-- HEADER -->
-    <header role="banner" class="position-absolute">    
-      <!-- Top Navigation -->
-      <nav class="background-transparent background-transparent-hightlight full-width sticky">
-        <div class="s-12 l-2">
-          <a href="index.html" class="logo">
-            <!-- Logo White Version -->
-            <img class="logo-white" src="img/logo.png" alt="">
-            <!-- Logo Dark Version -->
-            <img class="logo-dark" src="img/logo-dark.png" alt="">
-          </a>
-        </div>
-        <div class="top-nav s-12 l-10">
-          <p class="nav-text"></p>
-          <ul class="right chevron">
-            <li><a href="index.html">Home</a></li>
-           <li><a href="services.html">Services</a></li>
-            <li><a>Packages</a>
-              <ul>
-                <li><a href="domestic_packages.html">Domestic Packages</a></li>
-                <li><a>International packages</a></li>
-              </ul>
-            </li>	 <li><a href="about.html">About</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
+    <header role="banner" class="position-absolute">
+        <!-- Top Navigation -->
+        <nav class="background-transparent background-transparent-hightlight full-width sticky">
+            <div class="s-12 l-2">
+                <a href="index.html" class="logo">
+                    <!-- Logo White Version -->
+                    <img class="logo-white" src="img/logo.png" alt="">
+                    <!-- Logo Dark Version -->
+                    <img class="logo-dark" src="img/logo-dark.png" alt="">
+                </a>
+            </div>
+            <div class="top-nav s-12 l-10">
+                <p class="nav-text"></p>
+                <ul class="right chevron">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a>Packages</a>
+                        <ul>
+                            <li><a href="domestic_packages.html">Domestic Packages</a></li>
+                            <li><a>International packages</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    
+
     <!-- MAIN -->
     <main role="main">
-      <!-- Content -->
-      <article>
-        <header class="section background-dark">
-		 <h3 class="text-size-40 margin-bottom-30">Rajastan Tour</h3>
-        </header>
-        <section class="section background-white">
-    <div class="line">
-            <div class="margin">
-			
-		<div class="container">
-			<table border="1" cellpadding="10" cellspacing="0" align="middle"  height="300" width="600">
-			<tr bgcolor="#3399CC"><th style="text-align:center"><u>TOUR NAME</u></th><th style="text-align:center"><u>DURATION</u></th></tr>
-			<tr><td align="center"><a href="">Golden Triangle</a></td><td align="center">4 Nights/ 5 Days</td></tr>
-			<tr><td align="center"><a href="">Rajasthan Tour</a></td><td align="center">8 Nights/ 7 Days</td></tr>
-			
-		</table>
-		</div>
-	
-       	</div> 
-  <div class="margin">
-	<div>
-    <table id="my_table"><tr id='row_2'><td>
-	
-		<div class="container">
-			
-				<p style="color: green; font-size: 30px; text-decoration:underline" align="center">-- GOLDEN TRIANGLE -- </p><br><br>
+        <!-- Content -->
+        <article>
+            <header class="section background-dark">
+                <h3 class="text-size-40 margin-bottom-30">Rajastan Tour</h3>
+            </header>
+            <section class="section background-white">
+                <div class="line">
+                    <div class="margin">
+
+                        <div class="container">
+                            <table border="1" cellpadding="10" cellspacing="0" align="middle" height="300" width="600">
+                                <tr bgcolor="#3399CC">
+                                    <th style="text-align:center"><u>TOUR NAME</u></th>
+                                    <th style="text-align:center"><u>DURATION</u></th>
+                                </tr>
+                                <tr>
+                                    <td align="center"><a href="">Golden Triangle</a></td>
+                                    <td align="center">4 Nights/ 5 Days</td>
+                                </tr>
+                                <tr>
+                                    <td align="center"><a href="">Rajasthan Tour</a></td>
+                                    <td align="center">8 Nights/ 7 Days</td>
+                                </tr>
+
+                            </table>
+                        </div>
+
+                    </div>
+                    <div class="margin">
+                        <div>
+                            <table id="my_table">
+                                <tr id='row_2'>
+                                    <td>
+
+                                        <div class="container">
+
+                                            <p style="color: green; font-size: 30px; text-decoration:underline" align="center">-- GOLDEN TRIANGLE -- </p><br><br>
 
 
 
-<p style="color: red; font-size: 20px">[ Delhi, Agra, Jaipur ]</p><br><br>
-
- 
-<p style="color: brown; font-size: 20px">Day 1: Delhi (Capital of India). </p>
-Arrival at Delhi airport/ railway station. Then transfer to hotel after fresh n up enjoy the sightseeing of Delhi. Evening back to hotel. Overnight at Delhi.<br><br>
- 
-<p style="color: brown; font-size: 20px">Day 2 : Agra : </p>
-Drive to Agra, On arrival check into hotel. Later enjoy the sightseeing of Agra. Overnight at Agra. <br><br>
-
-<p style="color: brown; font-size: 20px">Day 3 : Jaipur : </p>
-Drive to Jaipur. Enroute visit Fathepur Sikri. On arrival check into hotel at jaipur. Overnight at Jaipur .<br><br>
-
-<p style="color: brown; font-size: 20px">Day 4 : Jaipur : </p>
-In morning enjoy the sightseeing of Pink City Jaipur. Do shopping in local market, Overnight at Hotel .<br><br>
-
-<p style="color: brown; font-size: 20px">Day 5 : Delhi :</p>
- Drive to Delhi. On arrival drop at Airport or Railway Station.
+                                            <p style="color: red; font-size: 20px">[ Delhi, Agra, Jaipur ]</p><br><br>
 
 
+                                            <p style="color: brown; font-size: 20px">Day 1: Delhi (Capital of India). </p>
+                                            Arrival at Delhi airport/ railway station. Then transfer to hotel after fresh n up enjoy the sightseeing of Delhi. Evening back to hotel. Overnight at Delhi.<br><br>
 
+                                            <p style="color: brown; font-size: 20px">Day 2 : Agra : </p>
+                                            Drive to Agra, On arrival check into hotel. Later enjoy the sightseeing of Agra. Overnight at Agra. <br><br>
 
-	
-		</div>
-	
-	
-	</td></tr>
-   
-        <tr id='row_1'><td>
-			<div class="container">
-			
-				<p style="color: green; font-size: 30px; text-decoration:underline" align="center">-- RAJASTHAN -- </p><br><br>
+                                            <p style="color: brown; font-size: 20px">Day 3 : Jaipur : </p>
+                                            Drive to Jaipur. Enroute visit Fathepur Sikri. On arrival check into hotel at jaipur. Overnight at Jaipur .<br><br>
 
+                                            <p style="color: brown; font-size: 20px">Day 4 : Jaipur : </p>
+                                            In morning enjoy the sightseeing of Pink City Jaipur. Do shopping in local market, Overnight at Hotel .<br><br>
 
-
-<p style="color: red; font-size: 20px">[ Mount Abu, Udaipur, Ajmer, Pushkar, Jaipur ]</p><br><br>
-
- 
-
-<p style="color: brown; font-size: 20px"> Day 1: Mont abu :</p>
- Arrive Abu road railway station , pick up and transfer to Mount Abu Check into the hotel on arrival. Rest of the day at leisure.<br><br> 
-Overnight stay at the hotel. 
-
-<p style="color: brown; font-size: 20px">Day 2 : Mount Abu :</p> 
-Take a full day sightseeing tour and visit Dilwara Jain Temples, Prajapita Brahmakumari Ashram and University, Gurusikhar and Nakki Lake. 
-Overnight stay at the hotel. <br><br>
-
-<p style="color: brown; font-size: 20px">Day 3: Udaipur (Lake City) :</p> 
-From Abu transfer to Udaipur, On arrival check into the hotel. Rest of the day at leisure. Overnight stay at the hotel.<br><br>
- 
-<p style="color: brown; font-size: 20px">Day 4 : Udaipur :</p> 
-Take a full day sightseeing tour and visit the City Palace, Saheliyon ki Badi, Maharana Pratap Samarak and Pear Hill. Overnight stay at the hotel .<br><br>
-
-<p style="color: brown; font-size: 20px">Day 5: Ajmer/ Pushkar : </p>
-After breakfast proceed to Pushkar via Ajmer. Enjoy Sight seeing of Ajmer and pushkar visit Khwaja shah Dargah, Brahma temple and Puskar Lake. 
-Overnight stay at the hotel .<br><br>
-
-<p style="color: brown; font-size: 20px">Day 6: Jaipur : (Pink City)</p>
- Drive to Jaipur , On arrival check into hotel to. In evening go for Chokhi dhani visit (Optional). Rest day at leisure. Overnight at Jaipur. <br><br>
-
-<p style="color: brown; font-size: 20px">Day 7 : Jaipur : </p>
-Take a full day sightseeing tour of Pink City and visit Amber Fort, Birla Manidr, Hawa Mahal, City Palace and Jantar Mantar, observatory. Overnight at Hotel .<br><br>
-
-
-<p style="color: brown; font-size: 20px">Day 8 : Jaipur:</p>
- Drop at Railway station or Airport.
+                                            <p style="color: brown; font-size: 20px">Day 5 : Delhi :</p>
+                                            Drive to Delhi. On arrival drop at Airport or Railway Station.
 
 
 
 
 
-	
-		</div>
-	</td></tr> 
-	 </table>
-</div>
-  
-  </div>
-		</div>  
-	   </section> 
-      </article>
+                                        </div>
+
+
+                                    </td>
+                                </tr>
+
+                                <tr id='row_1'>
+                                    <td>
+                                        <div class="container">
+
+                                            <p style="color: green; font-size: 30px; text-decoration:underline" align="center">-- RAJASTHAN -- </p><br><br>
+
+
+
+                                            <p style="color: red; font-size: 20px">[ Mount Abu, Udaipur, Ajmer, Pushkar, Jaipur ]</p><br><br>
+
+
+
+                                            <p style="color: brown; font-size: 20px"> Day 1: Mont abu :</p>
+                                            Arrive Abu road railway station , pick up and transfer to Mount Abu Check into the hotel on arrival. Rest of the day at leisure.<br><br> Overnight stay at the hotel.
+
+                                            <p style="color: brown; font-size: 20px">Day 2 : Mount Abu :</p>
+                                            Take a full day sightseeing tour and visit Dilwara Jain Temples, Prajapita Brahmakumari Ashram and University, Gurusikhar and Nakki Lake. Overnight stay at the hotel. <br><br>
+
+                                            <p style="color: brown; font-size: 20px">Day 3: Udaipur (Lake City) :</p>
+                                            From Abu transfer to Udaipur, On arrival check into the hotel. Rest of the day at leisure. Overnight stay at the hotel.<br><br>
+
+                                            <p style="color: brown; font-size: 20px">Day 4 : Udaipur :</p>
+                                            Take a full day sightseeing tour and visit the City Palace, Saheliyon ki Badi, Maharana Pratap Samarak and Pear Hill. Overnight stay at the hotel .<br><br>
+
+                                            <p style="color: brown; font-size: 20px">Day 5: Ajmer/ Pushkar : </p>
+                                            After breakfast proceed to Pushkar via Ajmer. Enjoy Sight seeing of Ajmer and pushkar visit Khwaja shah Dargah, Brahma temple and Puskar Lake. Overnight stay at the hotel .<br><br>
+
+                                            <p style="color: brown; font-size: 20px">Day 6: Jaipur : (Pink City)</p>
+                                            Drive to Jaipur , On arrival check into hotel to. In evening go for Chokhi dhani visit (Optional). Rest day at leisure. Overnight at Jaipur. <br><br>
+
+                                            <p style="color: brown; font-size: 20px">Day 7 : Jaipur : </p>
+                                            Take a full day sightseeing tour of Pink City and visit Amber Fort, Birla Manidr, Hawa Mahal, City Palace and Jantar Mantar, observatory. Overnight at Hotel .<br><br>
+
+
+                                            <p style="color: brown; font-size: 20px">Day 8 : Jaipur:</p>
+                                            Drop at Railway station or Airport.
+
+
+
+
+
+
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </article>
     </main>
     <footer>
-      <!-- Contact Us -->
-      <div class="background-primary padding text-center">
-        <p class="h1">Contact Us: 0982 331 4663</p>                                                                        
-      </div>
-      
-      <!-- Main Footer -->
-      <section class="background-dark full-width">
-        <!-- Map -->
-        <div class="s-12 m-12 l-6 margin-m-bottom-2x">
-          <div class="s-12 grayscale center">  
- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15128.856834489945!2d73.7719952!3d18.564379!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x12716dffdb0c78c7!2sSky+World+Tours+%26+Travels!5e0!3m2!1sen!2sin!4v1494008304397" width="100%" height="450" frameborder="0" style="border:0"></iframe>
-          </div>
+        <!-- Contact Us -->
+        <div class="background-primary padding text-center">
+            <p class="h1">Contact Us: 0982 331 4663</p>
         </div>
-        
-        <!-- Collumn 2 -->
-        <div class="s-12 m-12 l-6 margin-m-bottom-2x">
-          <div class="padding-2x">
-            <div class="line">              
-              <div class="float-left">
-                  <i class="icon-sli-location-pin text-primary icon3x"></i>
-                </div>
-                <div class="margin-left-70 margin-bottom-30">
-                  <h3 class="margin-bottom-0">Company Address</h3>
-                  <p>Shop No 2, Building C<br>
-                    Chintamani Nagar Society<br> Anand Park, Aundh, <br>Pune, Maharashtra 411007
-                  </p>               
-                </div>
-                <div class="float-left">
-                  <i class="icon-sli-envelope text-primary icon3x"></i>
-                </div>
-                <div class="margin-left-70 margin-bottom-30">
-                  <h3 class="margin-bottom-0">E-mail</h3>
-                 <p>skyworldtravels@gmail.com<br>
-                  </p>              
-                </div>
-                <div class="float-left">
-                  <i class="icon-sli-phone text-primary icon3x"></i>
-                </div>
-                <div class="margin-left-70">
-                  <h3 class="margin-bottom-0">Phone Numbers</h3>
-                  <p>020 258 81 800<br>
-                     0 989 089 8187<br>
-                     0 982 331 4663
-                  </p>             
+
+        <!-- Main Footer -->
+        <section class="background-dark full-width">
+            <!-- Map -->
+            <div class="s-12 m-12 l-6 margin-m-bottom-2x">
+                <div class="s-12 grayscale center">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15128.856834489945!2d73.7719952!3d18.564379!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x12716dffdb0c78c7!2sSky+World+Tours+%26+Travels!5e0!3m2!1sen!2sin!4v1494008304397" width="100%" height="450"
+                        frameborder="0" style="border:0"></iframe>
                 </div>
             </div>
-          </div>
-        </div>  
-      </section>
-      <hr class="break margin-top-bottom-0" style="border-color: rgba(0, 38, 51, 0.80);">
-      
-      <!-- Bottom Footer -->
-      </section>
+
+            <!-- Collumn 2 -->
+            <div class="s-12 m-12 l-6 margin-m-bottom-2x">
+                <div class="padding-2x">
+                    <div class="line">
+                        <div class="float-left">
+                            <i class="icon-sli-location-pin text-primary icon3x"></i>
+                        </div>
+                        <div class="margin-left-70 margin-bottom-30">
+                            <h3 class="margin-bottom-0">Company Address</h3>
+                            <p>Shop No 2, Building C<br> Chintamani Nagar Society<br> Anand Park, Aundh, <br>Pune, Maharashtra 411007
+                            </p>
+                        </div>
+                        <div class="float-left">
+                            <i class="icon-sli-envelope text-primary icon3x"></i>
+                        </div>
+                        <div class="margin-left-70 margin-bottom-30">
+                            <h3 class="margin-bottom-0">E-mail</h3>
+                            <p>skyworldtours.satish@gmail.com<br>
+                            </p>
+                        </div>
+                        <div class="float-left">
+                            <i class="icon-sli-phone text-primary icon3x"></i>
+                        </div>
+                        <div class="margin-left-70">
+                            <h3 class="margin-bottom-0">Phone Numbers</h3>
+                            <p>020 258 81 800<br> 0 989 089 8187<br> 0 982 331 4663
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="break margin-top-bottom-0" style="border-color: rgba(0, 38, 51, 0.80);">
+
+        <!-- Bottom Footer -->
+        </section>
     </footer>
-  
-  </body>
+
+</body>
+
 </html>
